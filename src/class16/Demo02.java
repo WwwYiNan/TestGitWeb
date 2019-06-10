@@ -11,6 +11,7 @@ public class Demo02 {
             public boolean accept(File dir, String name) {
                 File currFile = new File(dir, name);
 
+
                 if (currFile.isFile() && name.endsWith(".txt")) {
                     return true;
                 } else {

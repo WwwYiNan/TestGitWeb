@@ -14,6 +14,7 @@ public class Demo06 {
         File file = new File(path, fileName);
         if (!file.exists()) {
             try {
+
                 file.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();

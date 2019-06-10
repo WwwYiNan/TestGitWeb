@@ -7,13 +7,14 @@ public class Demo03 {
         File file = new File("D:\\dqj");
         deleteDir(file);
     }
-    public static void deleteDir(File dir){
-        if (dir.exists()){
+
+    public static void deleteDir(File dir) {
+        if (dir.exists()) {
             File[] files = dir.listFiles();
-            for (File file:files){
-                if (file.isDirectory()){
+            for (File file : files) {
+                if (file.isDirectory()) {
                     deleteDir(file);
-                }else {
+                } else {
                     file.delete();
                 }
             }

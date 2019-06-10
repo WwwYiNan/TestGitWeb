@@ -12,5 +12,6 @@ public class Demo05 {
         File file2 = new File("d:\\aaa\\a.txt");
         System.out.println(file2.createNewFile());
 
+
     }
 }

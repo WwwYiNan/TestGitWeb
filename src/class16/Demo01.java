@@ -8,6 +8,7 @@ public class Demo01 {
         if (file.isDirectory()){
             String[] names = file.list();
             for (String name:names){
+
                 System.out.println(name);
             }
         }
